@@ -1,22 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/gradient_container.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      body: Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [Colors.cyan, Colors.deepOrangeAccent])),
-          child: const Center(
-            child: Text(
-              'Hello world',
-              style: TextStyle(
-                  fontFamily: AutofillHints.creditCardExpirationDate,
-                  color: Colors.white,
-                  fontSize: 30),
-            ),
-          )),
-    ),
+  runApp(const MaterialApp(
+    home: Scaffold(body: GradientContainer()),
   ));
 }
 
