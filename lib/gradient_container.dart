@@ -4,6 +4,9 @@ import 'package:first_app/text_component.dart';
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.colorList});
 
+  const GradientContainer.red({super.key})
+      : colorList = const [Colors.red, Colors.black];
+
   final List<Color> colorList;
 
   @override
